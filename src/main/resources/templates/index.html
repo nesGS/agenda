@@ -34,6 +34,9 @@
             <td th:text="${#temporals.format(contacto.fechaNacimiento,'dd/MM/YYYY')}"></td>
             <td th:text="${#temporals.format(contacto.fechaRegistro,'dd/MM/YYYY hh:mm a')}"></td>
             <!-- En las líneas anteriores se establece el formato en el que va a aparecer la fecha hh:mm para hora, a para PM AM -->
+            <td>
+                <a th:href="@{/{id}/editar(id=${contacto.id})}">Editar</a>
+            </td>
 
         </tr>
         </tbody>
